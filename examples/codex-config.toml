@@ -1,0 +1,4 @@
+# ~/.codex/config.toml — export PROOFHAND_KEY=ph_live_… in your shell
+[mcp_servers.proofhand]
+url = "https://proofhand.dev/api/mcp"
+bearer_token_env_var = "PROOFHAND_KEY"

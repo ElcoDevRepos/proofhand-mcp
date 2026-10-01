@@ -1,0 +1,12 @@
+{
+  "inputs": [
+    { "type": "promptString", "id": "proofhand-key", "description": "Proofhand API key (ph_live_…)", "password": true }
+  ],
+  "servers": {
+    "proofhand": {
+      "type": "http",
+      "url": "https://proofhand.dev/api/mcp",
+      "headers": { "Authorization": "Bearer ${input:proofhand-key}" }
+    }
+  }
+}

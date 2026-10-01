@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "dev.proofhand/proofhand",
+  "title": "Proofhand",
+  "description": "Human QA on real phones and browsers for your coding agent. Pass/fail per step, with screenshots.",
+  "version": "1.0.0",
+  "websiteUrl": "https://proofhand.dev",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://proofhand.dev/api/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer ph_live_… API key from https://proofhand.dev/dev/settings",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

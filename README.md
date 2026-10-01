@@ -7,6 +7,7 @@ Your agent (Claude Code, Cursor, Codex, VS Code, anything that speaks MCP or HTT
 - Hosted remote server: `https://proofhand.dev/api/mcp` (streamable HTTP, bearer API key)
 - Registry name: `dev.proofhand/proofhand` in the [official MCP Registry](https://registry.modelcontextprotocol.io)
 - Pricing: you set the reward per device (default $5, betas from $8) plus a 20% platform fee, reserved up front and refunded if nobody claims the run
+- **Launch offer: $10 of checks on us** for the first developers who verify a domain (added to your balance automatically)
 - Try it without signing up: **https://demo.proofhand.dev**
 - Docs: https://proofhand.dev/docs
 
@@ -14,7 +15,7 @@ This repository holds configuration examples and the registry manifest. The serv
 
 ## Setup
 
-1. Create an account at https://proofhand.dev/signup and verify a domain you own (a DNS TXT record). Checks can only target your verified domains and the app betas they list.
+1. Create an account at https://proofhand.dev/signup and verify a domain you own: add a TXT record named `_proofhand.<your domain>` with the value shown in Settings. Many DNS dashboards add your domain to the name for you; in those, type just `_proofhand` (or `_proofhand.staging` for `staging.example.com`). Verifying a domain covers its subdomains, and while launch spots last it adds $10 of checks to your balance. Checks can only target your verified domains and the app betas they list.
 2. Add funds and create an API key in **Settings**.
 3. Connect your agent:
 
